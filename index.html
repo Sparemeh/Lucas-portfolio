@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaQueries.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav id="desktop-nav">
+            <div class="logo">Lucas Liu</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Lucas Liu</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profilepicmain.png" alt="Lucas Profile Pic"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hi, I'm</p>
+                <h1 class="title">Lucas Liu</h1>
+                <p class="section__text__p2">Game Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/CoopResumeV2.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/LinkedIn_logo_initials.png" 
+                    alt="LinkedIn Profile" 
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/lucas-liu-32b566216/'"/>
+                    <img src="./assets/github.png" 
+                    alt="Github Profile" 
+                    class="icon" 
+                    onclick="location.href='https://github.com/Sparemeh/Lucas-portfolio'"/>
+                </div>
+            </div>
+        </section>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
